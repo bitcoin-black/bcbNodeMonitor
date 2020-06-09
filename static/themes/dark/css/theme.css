@@ -9,8 +9,8 @@
 
 body {
     font-family: 'Nunito', sans-serif;
-    background: #272B30;
-    color: #cccccc;
+    background: #ffffff;
+    color: #ffffff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -30,7 +30,7 @@ body {
     line-height: 1.6rem;
     letter-spacing: 0.02rem;
     font-weight: 400;
-    background-color: #3A3F44;
+    background-color: #000000;
     padding:1.5% 4%;
     border-bottom: 1px solid #242a38;
 }
@@ -55,7 +55,9 @@ body {
     opacity: 1;
     transition: all 0s;
 }
-
+i.fas.fa-spinner.fa-spin.fa-3x {
+    color: #000 !important;
+}
 /*
 
  -- Body Content CSS
@@ -71,14 +73,14 @@ h2 {
     line-height: 2.9rem;
     font-weight: 400;
     max-width: 930px;
-    color: #ea882e;
+    color: #000000;
 }
 
 h3 {
     font-size: 1.4rem;
     font-weight: 400;
     max-width: 930px;
-    color: #ea882e;
+    color: #000000;
 }
 
 p {
@@ -101,12 +103,12 @@ p {
 }
 
 .card {
-    background-color: #3A3F44!important;
+    background-color: #000000!important;
     font-size: 0.9rem;
 }
 
 .list-group-item {
-    background-color: #3A3F44!important;
+    background-color: #000000!important;
     border: 1px solid rgba(0,0,0,0.4);
     font-size: 0.9rem;
 }
@@ -116,19 +118,22 @@ a {
 }
 
 a:hover {
-    color: #ea882e;
+    color: #0b5abc;
 }
 
 hr.light {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ea882e;
+    border-top: 1px solid #000000;
     margin: 1em 0;
     padding: 0;    
-    opacity: 0.2;
+    opacity: 0.5;
 }
 
+li.version {
+    color: #000;
+}
 .btn-clipboard {
     color: #ffffff;
 }

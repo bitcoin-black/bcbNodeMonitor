@@ -292,7 +292,7 @@ function getNodeNinja($account)
   $curl = curl_init();
 
   curl_setopt_array($curl, array(
-    CURLOPT_URL => "https://mynano.ninja/api/accounts/$account",
+    CURLOPT_URL => "https://nodes.bitcoinblack.net/api/accounts/$account",
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => "",
     CURLOPT_MAXREDIRS => 10,
@@ -355,6 +355,10 @@ function getAccountUrl($account, $blockExplorer)
       return "https://beta.nano.org/account/index.php?acc=" . $account;
     case 'nifni':
       return "https://nano.nifni.net/explorer.php?s=" . $account;
+    case 'bcb-beta':
+      return "https://beta.bitcoinblack.info/#/explorer/account/". $account;
+    case 'bcb-live':
+      return "https://bitcoinblack.info/#/explorer/account/". $account;
     case 'banano':
       return "https://creeper.banano.cc/explorer/account/" . $account;
     default:
@@ -367,7 +371,7 @@ function getNodeNinjaBlockcount()
   $curl = curl_init();
 
   curl_setopt_array($curl, array(
-    CURLOPT_URL => "https://mynano.ninja/api/blockcount",
+    CURLOPT_URL => "https://nodes.bitcoinblack.net/api/blockcount",
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => "",
     CURLOPT_MAXREDIRS => 10,
@@ -481,7 +485,7 @@ function currencyName($currency)
       return "Nano BETA";
     
     default:
-      return "Nano";
+      return "BCB";
   }
 
 }
@@ -498,7 +502,7 @@ function currencySymbol($currency)
       return "\u{3B2}NANO";
     
     default:
-      return "NANO";
+      return "BCB";
   }
 
 }

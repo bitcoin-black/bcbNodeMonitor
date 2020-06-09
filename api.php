@@ -63,7 +63,7 @@ $data = $cache->fetch($apiName, function () use (
     $data->uncheckedBlocks = (int) $rpcBlockCount->{'unchecked'};
     $data->cementedBlocks = (int) $rpcBlockCount->{'cemented'} ?: 0;
 
-    if ($currency == 'nano') {
+    if ($currency == 'bcb') {
         $data->blockSync = getSyncStatus($data->currentBlock);
     }
 

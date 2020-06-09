@@ -30,7 +30,6 @@ function getVersion($ch)
 {
   // get version string
   $data = array("action" => "version");
-
   // post curl
   return postCurl($ch, $data);
 }
